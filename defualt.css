@@ -172,6 +172,7 @@ body {
     animation: none;
     z-index: 20;
     transform:scale(0.7);
+    pointer-events:none;
 }
 
 @keyframes mwin{

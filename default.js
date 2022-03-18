@@ -43,9 +43,11 @@ function musicwindow() {
     if (window.style.opacity==0) {
         window.style.animation = "mwin 0.5s forwards";
         window.style.opacity=1;
+        window.style.pointerEvents="auto";
     }else if(window.style.opacity==1){
         window.style.opacity=0;
         window.style.animation = "mwout 0.5s forwards";
+        window.style.pointerEvents="none";
     }
 
 }
