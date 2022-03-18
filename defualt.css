@@ -151,6 +151,15 @@ body {
     opacity: 0;
 }
 
+.aclick{
+
+}
+
+.aclick:link{color: black;}
+.aclick:visited{color: black;}
+.aclick:hover{color: black;}
+.aclick:active{color: black;}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
