@@ -29,7 +29,7 @@ body {
     position: absolute;
     background: url("/img/back.jpg");
     z-index: -2;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 
 .namefontch {
@@ -274,4 +274,8 @@ body {
 @-webkit-keyframes backOut2 {
     from{opacity: 0.5;}
     to{opacity: 0;}
+}
+
+@keyframes inver{
+    form{filter: invert();}
 }
