@@ -10,6 +10,7 @@ body {
     position: fixed;
     float: left;
     overflow: hidden;
+    box-shadow: 0 0 10px 0 black;
 }
 
 .proimg {
@@ -27,7 +28,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url("/img/back.jpg");
+    background: linear-gradient(180deg, #4885bd 25%, #1a1946 100%);
     z-index: -2;
     background-size:cover;
 }
@@ -111,7 +112,7 @@ body {
     margin: 0;
     float: right;
     animation: none;
-    z-index: 10;
+    box-shadow:1px 0px 10px 0px black;
 }
 
 
