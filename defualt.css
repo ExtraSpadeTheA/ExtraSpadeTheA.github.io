@@ -10,7 +10,7 @@ body {
     position: fixed;
     float: left;
     overflow: hidden;
-    box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 10px 1px black;
 }
 
 .proimg {
