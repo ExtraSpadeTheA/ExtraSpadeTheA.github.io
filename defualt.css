@@ -85,7 +85,7 @@ body {
     height: 100vh;
     width: 67%;
     left: 33%;
-    z-index: 2;
+    z-index: 50;
     mix-blend-mode: difference;
     background-color: rgb(255, 255, 255);
     pointer-events: none;
@@ -97,7 +97,7 @@ body {
     position:fixed;
     height: 100vh;
     width: 33%;
-    z-index: 2;
+    z-index: 50;
     mix-blend-mode: difference;
     background-color: rgb(66, 66, 66);
     pointer-events: none;
@@ -111,6 +111,7 @@ body {
     margin: 0;
     float: right;
     animation: none;
+    z-index: 10;
 }
 
 
@@ -160,6 +161,38 @@ body {
 .aclick:visited{color: black;}
 .aclick:hover{color: black;}
 .aclick:active{color: black;}
+
+.musicwindow{
+    position: fixed;
+    width: 67%;
+    height: 100%;
+    background-color: rgb(31, 28, 28);
+    left: 33%;
+    opacity: 0;
+    animation: none;
+    z-index: 20;
+    transform:scale(0.7);
+}
+
+@keyframes mwin{
+    form{opacity: 0;transform: scale(0.7);}
+    to{opacity: 1;transform: scale(1);}
+}
+
+@-webkit-keyframes mwin{
+    form{opacity: 0;transform: scale(0.7);}
+    to{opacity: 1;transform: scale(1);}
+}
+
+@keyframes mwout{
+    form{opacity: 1;transform: scale(1);}
+    to{opacity: 0;transform: scale(0.7);}
+}
+
+@-webkit-keyframes mwout{
+    form{opacity: 1;transform: scale(1);}
+    to{opacity: 0;transform: scale(0.7);}
+}
 
 @keyframes fadeIn {
     from {
