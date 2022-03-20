@@ -20,6 +20,7 @@
         width: 100%;
         float: none;
         animation: none;
+        z-index: -1;
     }
 
 
