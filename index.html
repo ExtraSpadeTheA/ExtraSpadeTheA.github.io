@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="/defualt.css" />
+    <link rel="stylesheet" type="text/css" href="/scrollbar.css" />
     <script type="text/javascript" src="/default.js"></script>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/icon/icon.ico" type="image/x-icon" />
@@ -13,31 +14,28 @@
 
 <body style="background-color: #fdfaf7;" onscroll="fade()">
     <div id="leftmask" class="leftmask"></div>
-    <div class="Psi">
+    <!--左侧界面-->
+    <div class="Leftcontent">
+        <div class="cover"></div>
         <div class="bgimg"></div>
-        <div style="text-align: center;margin-top:20%;">
-            <img class="proimg" src="/img/proimg.jpg" />
-        </div>
-        <p class="namefontch">徐劲松</p>
-        <div class="adiv">
-            <a class="ahref" href="#">
-                <img class="icon" src="/icon/home.png" style="filter: invert(100%);" onclick="tohome()" />
-            </a>
-            <a class="ahref" href="mailto:satalice_puno@outlook.com">
-                <img class="icon" src="/icon/mail.png" />
-            </a>
-            <a class="ahref" target="_blank" href="https://space.bilibili.com/14571927">
-                <img class="icon" src="/icon/bilibili.png" style="filter: invert(100%);" />
-            </a>
-            <a class="ahref" target="_blank" href="https://github.com/ExtraSpadeTheA">
-                <img class="icon" src="/icon/github.png" style="filter: invert(100%);" />
-            </a>
-            <i class="ahref">
-                <img class="icon" src="/icon/shift.png" style="filter: invert(100%);" onclick="DNshift()" />
-            </i>
-            <i class="ahref">
-                <img class="icon" src="/icon/music.png" style="filter: invert(100%);" onclick="musicwindow()" />
-            </i>
+
+        <div class="Overview">
+            <img class="Avatar" src="/img/proimg.jpg" />
+
+            <p class="namefontch">徐劲松</p>
+            <!--导航栏-->
+            <ul>
+                <li><a href="#"><img class="icon" src="/icon/home.png" /></a></li>
+                <li><a href="mailto:satalice_puno@outlook.com"><img class="icon" src="/icon/mail.png" /></a></li>
+                <li><a href="#"><img class="icon" src="/icon/music.png" onclick="musicframe()"/></a></li>
+                <li><a href="https://github.com/ExtraSpadeTheA"><img class="icon" src="/icon/github.png" /></a></li>
+                <li><a href="https://space.bilibili.com/14571927"><img class="icon"
+                            src="/icon/bilibili.png" /></a></li>
+                <li><a href="#"><img class="icon" src="/icon/home.png" /></a></li>
+            </ul>
+
+            <div style="height: 20px;"></div>
+            <!--空格符-->
         </div>
         <p class="introfontch">
             一个被毕设和招聘会折磨的普通程序狗,爱好绘画、探索自然风景以及一些网络上的新鲜事物,除了烂宅以外同时也是东方Project同人游戏作者
@@ -47,9 +45,12 @@
 
     <div id="rightmask" class="rightmask"></div>
     <!--音乐播放器-->
-    <div id="music" class="musicwindow">
+    <div id="music" class="window">
+    <div class="record"></div>
+        <audio controls></audio>
     </div>
-    <div id="home" class="contentdiv">
+    <!--右侧界面-->
+    <div id="home" class="Rightcontent">
         <div style="height: auto;">
             <br />
             <br />
@@ -80,7 +81,7 @@
             </p>
             <p class="hometext">
                 对于画家来说,我推荐<a class="aclick" target="_blank"
-                    href="https://artsandculture.google.com/entity/%E6%96%87%E6%A3%AE%E7%89%B9%C2%B7%E6%A2%B5%E9%AB%98/m07_m2?categoryId=artist"><i>梵高</i></a>
+                    href="https://artsandculture.google.com/entity/%E6%96%87%E6%A3%AE%E7%89%B9%C2%B7%E6%A2%B5%E9%AB%98/m07_m2?categoryId=artist">梵高</a>
             </p>
             <div style="height: 200px;margin: 0px;"></div>
             <p class="hometitle">
