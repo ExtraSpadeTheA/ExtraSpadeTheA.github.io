@@ -1,0 +1,227 @@
+@media screen and (max-width:340px) {
+
+
+    .Leftcontent {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        float: none;
+        box-shadow: 0 0 10px 1px black;
+    }
+
+    .ghost {
+        width: 100%;
+        height: 100px;
+    }
+
+    .Rightcontent {
+        position: relative;
+        width: 100%;
+        float: none;
+        animation: none;
+    }
+
+
+    .Avatar {
+        border-width: 3px;
+        border-radius: 50%;
+        border-style: solid;
+        height: 40px;
+        width: 40px;
+        border-color: rgba(255, 255, 255, 0.637);
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.562);
+        margin-top: 2%;
+        cursor: pointer;
+        transition: 250ms;
+    }
+
+    .Avatar:hover {
+        transform: scale(1.1);
+    }
+
+    .cover {
+        position: fixed;
+        background-color: rgba(75, 58, 14, 0.301);
+        width: 100%;
+        height: 100px;
+        z-index: -2;
+    }
+
+    .bgimg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: url("/img/back.jpg");
+        z-index: -100;
+        background-size: cover;
+    }
+
+    .namefontch {
+        font-family: Microsoft JhengHei;
+        font-size: 10px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        margin: 0;
+        opacity: 0.8;
+
+    }
+
+    ul {
+        width: 100%;
+        bottom: 0px;
+        padding: 0px;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.137);
+        box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.397);
+        transition: 250ms;
+        margin: 0px;
+    }
+
+    .Leftcontent a {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+    }
+
+    .icon {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        transition: 250ms;
+    }
+
+    .icon:hover {
+        transform: scale(1.25);
+    }
+
+    .introfontch {
+        visibility: hidden;
+    }
+
+    .rightmask {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        z-index: 50;
+        mix-blend-mode: difference;
+        background-color: rgb(255, 255, 255);
+        pointer-events: none;
+        opacity: 0;
+
+    }
+
+    .leftmask {
+        position: fixed;
+        z-index: 50;
+        mix-blend-mode: difference;
+        background-color: rgb(66, 66, 66);
+        pointer-events: none;
+        opacity: 0;
+        width: 100%;
+        height: 100px;
+    }
+    .textspace{
+        height: 20px;
+        margin: 0px;
+    }
+    .space {
+        height: 0px;
+    }
+
+    .hometitle {
+        height: 20px;
+        width: 90%;
+        text-align: left;
+        font-size: 1em;
+        margin: 10px 0 10px 10%;
+    }
+
+    .hometext {
+        height: auto;
+        width: 60%;
+        text-align: left;
+        font-size: 0.5em;
+        margin: 0 0 5px 10%;
+    }
+
+    .homeicon {
+        animation: none;
+        transition: 0.25s;
+        -webkit-transition: 0.25s;
+        height: 20px;
+        filter: invert(100%);
+        vertical-align: middle;
+    }
+
+    .homeicon:hover {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+
+    #fadecontent {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        opacity: 0;
+    }
+
+    .aclick {
+        position: relative;
+
+    }
+
+    .aclick:link {
+        color: black;
+    }
+
+    .aclick:visited {
+        color: black;
+    }
+
+    .aclick:hover {
+        color: black;
+    }
+
+    .aclick:active {
+        color: black;
+    }
+
+    .window {
+        position: fixed;
+        height: 80%;
+        width: 50%;
+        top: 10%;
+        left: 45%;
+        border-width: 20px 1px 1px;
+        border-radius: 1.5%;
+        border-style: solid;
+        z-index: 10;
+        background-color: rgb(222, 224, 219);
+        overflow: auto;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.822);
+    }
+
+    .record {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 60px black solid;
+        background-color: rgb(97, 13, 13);
+        margin: 5%;
+    }
+
+    audio {
+        height: 20px;
+        width: 240px;
+        background-color: #F1F3F4;
+        border: #F1F3F4 solid;
+        border-width: 15px 0px 15px 0px;
+        display: block;
+        margin: 5%;
+
+    }
+}
