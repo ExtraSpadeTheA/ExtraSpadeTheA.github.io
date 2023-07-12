@@ -1,4 +1,5 @@
 ---
 title: categories
-date: 2023-07-01 01:13:24
+date: 2023-07-01 00:34:30
+layout: "category"
 ---

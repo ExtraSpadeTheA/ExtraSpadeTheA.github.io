@@ -14,6 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://github.com/ExtraSpadeTheA/ExtraSpadeTheA.github.io/Blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,8 +102,8 @@ theme: keep
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: https://github.com/ExtraSpadeTheA/ExtraSpadeTheA.github.io/Blog.git
+  type: git
+  repo: git@github.com:ExtraSpadeTheA/ExtraSpadeTheA.github.io.git
   branch: main
 
 search:
@@ -110,3 +111,46 @@ search:
   field: post
   content: true
   format: striptags
+
+markdown:
+  preset: "default"
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: "language-"
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: "“”‘’"
+  enable_rules:
+  disable_rules:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-cjk-breaks
+    - markdown-it-deflist
+    - markdown-it-emoji
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-checkbox
+    - markdown-it-imsize
+    - markdown-it-expandable
+    - name: markdown-it-container
+      options: success
+    - name: markdown-it-container
+      options: tips
+    - name: markdown-it-container
+      options: warning
+    - name: markdown-it-container
+      options: danger
+  anchors:
+    level: 2
+    collisionSuffix: ""
+    permalink: false
+    permalinkClass: "header-anchor"
+    permalinkSide: "left"
+    permalinkSymbol: "¶"
+    case: 0
+    separator: "-"

@@ -1,5 +1,5 @@
 .home-content-container {
-  background: var(--background-color-1);
+  background: transparent;
 }
 .home-content-container .home-article-list .home-article-item {
   position: relative;
